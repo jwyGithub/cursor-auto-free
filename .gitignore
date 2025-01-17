@@ -1,0 +1,9 @@
+bin
+build
+__pycache__
+dist
+include
+lib
+logs
+cursor_accounts.txt
+*.cfg
