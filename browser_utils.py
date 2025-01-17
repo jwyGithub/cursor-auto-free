@@ -103,6 +103,7 @@ class BrowserManager:
         co.set_argument("--hide-crash-restore-bubble")
         proxy = os.getenv('BROWSER_PROXY')
         if proxy:
+            logging.info(f'using.proxy {proxy}')
             co.set_proxy(proxy)
         co.auto_port()
         co.headless(os.getenv('BROWSER_HEADLESS', 'True').lower() == 'true')
